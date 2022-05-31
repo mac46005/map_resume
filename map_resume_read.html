@@ -24,6 +24,7 @@
             font-size: 16px;
             background: rgb(55, 55, 55);
             color: var(--primary-text-color);
+            font-family: Bodoni MT;
         }
 
         a {
@@ -61,7 +62,9 @@
             flex-direction: column;
             border: 1px solid green
         }
-
+        .wrap{
+            flex-wrap: wrap;
+        }
         .col-1 {
             flex-basis: 23%;
         }
@@ -103,21 +106,32 @@
 
 
 
-        /* START .mainSection */
+        /* START .personalSection */
+        .img figure img{
+            width: 100%;
+        }
         .personalSection h3 {
             color: rgb(0, 89, 255);
         }
+        /* END .personalSection */
 
+        /* START .mainSection */
         .mainSection hgroup {
             padding-left: 1em;
         }
 
         .mainSection hgroup h1 {
             margin: 0;
+            font-size: 5em;
         }
-
-        .mainSection h1 {
-            font-size: 2rem;
+        .mainSection hgroup h1:nth-child(2){
+            color: rgb(213, 1, 1);
+        }
+        .mainSection hgroup h3{
+            margin: 0;
+            padding: 0;
+            line-height: 5px;
+            
         }
 
         .mainSection .mSubSec h3 {
@@ -132,7 +146,7 @@
 <body>
     <div class="container">
 
-        <main class="rows just-spEven">
+        <main class="rows just-spEven wrap">
 
 
 
@@ -147,11 +161,15 @@
 
 
 
-            <!-- *START LEFT SECTION -->
+            <!-- =START LEFT SECTION -->
             <section class=" col-1 columns personalSection">
                 <div class="img">
-
+                    <figure>
+                        <img src="./img/IMG_20220529_115015452.jpg" alt="">
+                    </figure>
                 </div>
+
+                <!-- * My Summary -->
                 <div class="pItem">
                     <h3>summary</h3>
                     <p>
@@ -159,7 +177,7 @@
                         corrupti atque nesciunt animi neque quis voluptates numquam similique quaerat, fugit soluta
                         adipisci dolorum odit incidunt tempora perferendis?
                     </p>
-                </div>
+                </div><!--= END Summary-->
                 <div class="pItem">
                     <h3>contact</h3>
                     <address>
@@ -175,9 +193,11 @@
 
                     </address>
                 </div>
+
+                <!--= START Social Links -->
                 <div class="pItem">
                     <h3>social</h3>
-                </div>
+                </div><!--= END Social Links-->
             </section>
             <!-- !END LEFT SECTION -->
 
@@ -187,12 +207,13 @@
 
 
 
-            <!-- *START RIGHT SIDE -->
+            <!--= START RIGHT SIDE -->
             <section class="col-3 columns mainSection">
                 <header>
                     <hgroup>
                         <h1>Marco</h1>
                         <h1>Preciado</h1>
+                        <h3>webdesigner/programmer</h3>
                     </hgroup>
 
                 </header>
@@ -200,7 +221,7 @@
 
 
 
-                <!-- *START Education -->
+                <!--= START Education -->
                 <div class="mSubSec">
                     <h3>Education</h3>
                     <!-- <div class="mSubSecItem">
@@ -250,13 +271,13 @@
                         </ul>
                     </div>
                 </div>
-                <!-- !END Education -->
+                <!--= END Education -->
 
 
                 <div class="mSubSec">
                     <h3>experience</h3>
                 </div>
-                
+
                 <div class="mSubSec">
                     <h3>activities and honors</h3>
                 </div>
