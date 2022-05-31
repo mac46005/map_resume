@@ -18,19 +18,101 @@
         .rows{
             display: flex;
             flex-direction: row;
+            border: 1px solid blue
         }
 
         .columns{
             display: flex;
             flex-direction: column;
+            border: 1px solid green
+        }
+
+        .col-1{
+            flex-basis: 23%;
+        }
+        .col-2{
+            flex-basis: 47%;
+        }
+        .col-3{
+            flex-basis: 72%;
+        }
+        .col-4{
+            flex-basis: 97%;
+        }
+
+        .just-spBet{
+            justify-content: space-between;
+        }
+        .just-spEven{
+            justify-content: space-evenly;
+        }
+        .just-spArnd{
+            justify-content: space-around;
+        }
+        .just-center{
+            justify-content: center;
         }
         /* END layout */
     </style>
 </head>
 <body>
     <div class="container">
-        <main class="rows">
+        <main class="rows just-spEven">
+            <section class=" col-1 columns">
+                <div class="img">
 
+                </div>
+                <div class="pItem">
+                    <h3>profile</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsum voluptatibus dolores corrupti atque nesciunt animi neque quis voluptates numquam similique quaerat, fugit soluta adipisci dolorum odit incidunt tempora perferendis?
+                    </p>
+                </div>
+                <div class="pItem">
+                    <h3>contact</h3>
+                </div>
+                <div class="pItem">
+                    <h3>social</h3>
+                </div>
+            </section>
+            <section class="col-3 columns">
+                <header>
+                    <h1>Marco</h1>
+                    <h1>Preciado</h1>
+                </header>
+                <div class="histSec">
+                    <h3>Education</h3>
+                    <div class="histItem">
+                        <h4>
+                            pattonville highschool
+                        </h4>
+                        <ul>
+                            <li>
+                                2007 - 2011
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="histItem">
+                        <h4>
+                            saint louis community college
+                        </h4>
+                        <ul>
+                            <li>
+                                2018 - 2021
+                            </li>
+                            <li>
+                                GPA 3.56
+                            </li>
+                            <li>
+                                COURSES:
+                                <br>
+                                C# I, II, III
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                div.
+            </section>
         </main>
     </div>
 </body>
