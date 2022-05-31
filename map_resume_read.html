@@ -50,8 +50,8 @@
         /* layout */
 
         .container {
-            width: 80%;
-            min-width: 600px;
+            min-width: 80%;
+            min-width: 400px;
             margin: 0 auto;
         }
 
@@ -119,6 +119,18 @@
         .img figure img{
             width: 100%;
         }
+        hgroup#nameTitle_02{
+            display: none;
+        }
+        hgroup#nameTitle_02 h1{
+            margin: 0;
+            padding: 0;
+            font-size: 2rem;
+        }
+
+        hgroup#nameTitle_02 h1:nth-child(2){
+            color: red;
+        }
         .personalSection h2 {
             color: rgb(0, 89, 255);
         }
@@ -156,7 +168,7 @@
         /* END .mainSection */
 
 
-        @media (max-width: 600px) {
+        @media (max-width: 700px) {
             .container .rows section{
                 flex-basis: 80%;
             }
@@ -165,6 +177,10 @@
             }
             #NameTitle_02{
                 display: block;
+            }
+            hgroup#nameTitle_02{
+                display: block;
+                text-align: center;
             }
         }
     </style>
@@ -195,7 +211,11 @@
                         <img src="./img/IMG_20220529_115015452.jpg" alt="Marco Antonio Preciado" title="Marco Antonio Preciado">
                     </figure>
                 </div>
-
+                <hgroup id="nameTitle_02">
+                    <h1>Marco</h1>
+                    <h1>Preciado</h1>
+                    <p>webdesigner/programmer</p>
+                </hgroup>
                 <!-- * My Summary -->
                 <div class="pItem">
                     <h2>summary</h2>
