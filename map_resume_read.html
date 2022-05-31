@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- 
+    contact
+    summary
+    education and training
+    experience
+    activities and honors
+ -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,63 +16,116 @@
     <meta property="og:type" content="text document">
     <title>MAP Resume</title>
     <style>
-        body{
+        :root{
+            --primary-text-color: #efefef;
+        }
+        body {
             margin: 0;
             font-size: 16px;
             background: rgb(55, 55, 55);
+            color: #efefef;
         }
+
+        a {
+            text-decoration: none;
+            color: rgb(207, 37, 207);
+        }
+
+
+
+
+
+
+
 
         /* layout */
 
-        .container{
+        .container {
             width: 80%;
             margin: 0 auto;
         }
-        .rows{
+
+        .rows {
             display: flex;
             flex-direction: row;
             border: 1px solid blue
         }
 
-        .columns{
+        .columns {
             display: flex;
             flex-direction: column;
             border: 1px solid green
         }
 
-        .col-1{
+        .col-1 {
             flex-basis: 23%;
         }
-        .col-2{
+
+        .col-2 {
             flex-basis: 47%;
         }
-        .col-3{
+
+        .col-3 {
             flex-basis: 72%;
         }
-        .col-4{
+
+        .col-4 {
             flex-basis: 97%;
         }
 
-        .just-spBet{
+        .just-spBet {
             justify-content: space-between;
         }
-        .just-spEven{
+
+        .just-spEven {
             justify-content: space-evenly;
         }
-        .just-spArnd{
+
+        .just-spArnd {
             justify-content: space-around;
         }
-        .just-center{
+
+        .just-center {
             justify-content: center;
         }
+
         /* END layout */
+
+
+
+
+
+
+
+
+        /* START .mainSection */
+        .personalSection h3 {
+            color: rgb(0, 89, 255);
+        }
+
+        .mainSection hgroup {
+            padding-left: 1em;
+        }
+
+        .mainSection hgroup h1 {
+            margin: 0;
+        }
+
+        .mainSection h1 {
+            font-size: 2rem;
+        }
+
+        .mainSection .mSubSec h3 {
+            border-bottom: .1em solid #efefef;
+            border-image: linear-gradient(to left, #efefef, transparent);
+        }
+
+        /* END .mainSection */
     </style>
 </head>
+
 <body>
     <div class="container">
-
-
-
 
         <main class="rows just-spEven">
 
@@ -89,7 +150,9 @@
                 <div class="pItem">
                     <h3>profile</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsum voluptatibus dolores corrupti atque nesciunt animi neque quis voluptates numquam similique quaerat, fugit soluta adipisci dolorum odit incidunt tempora perferendis?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsum voluptatibus dolores
+                        corrupti atque nesciunt animi neque quis voluptates numquam similique quaerat, fugit soluta
+                        adipisci dolorum odit incidunt tempora perferendis?
                     </p>
                 </div>
                 <div class="pItem">
@@ -97,7 +160,7 @@
                     <address>
                         <p>Phone Address: <span>(314)-912-6131</span></p>
                         <p>
-                            Email Address: 
+                            Email Address:
                             <a href="mailto:mac46005@gmail.com">
                                 mac46005@gmail.com
                             </a>
@@ -122,8 +185,11 @@
             <!-- *START RIGHT SIDE -->
             <section class="col-3 columns mainSection">
                 <header>
-                    <h1>Marco</h1>
-                    <h1>Preciado</h1>
+                    <hgroup>
+                        <h1>Marco</h1>
+                        <h1>Preciado</h1>
+                    </hgroup>
+
                 </header>
 
 
@@ -132,7 +198,7 @@
                 <!-- *START Education -->
                 <div class="mSubSec">
                     <h3>Education</h3>
-                    <div class="mSubSecItem">
+                    <!-- <div class="mSubSecItem">
                         <h4>
                             pattonville highschool
                         </h4>
@@ -141,7 +207,7 @@
                                 2007 - 2011
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                     <div class="mSubSecItem">
                         <h4>
                             saint louis community college
@@ -160,6 +226,7 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="mSubSecItem">
                         <h4>
                             University Saint Louis Missouri
@@ -189,4 +256,5 @@
         </main>
     </div>
 </body>
+
 </html>
