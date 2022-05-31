@@ -51,6 +51,7 @@
 
         .container {
             width: 80%;
+            min-width: 600px;
             margin: 0 auto;
         }
 
@@ -111,14 +112,14 @@
 
         /* START .personalSection */
         .img{
-            
+
         }
         .img figure{
         }
         .img figure img{
             width: 100%;
         }
-        .personalSection h3 {
+        .personalSection h2 {
             color: rgb(0, 89, 255);
         }
         /* END .personalSection */
@@ -131,6 +132,7 @@
         .mainSection hgroup h1 {
             margin: 0;
             font-size: 5em;
+            letter-spacing: .2rem;
         }
         .mainSection hgroup h1:nth-child(2){
             color: rgb(213, 1, 1);
@@ -141,13 +143,30 @@
             line-height: 5px;
             
         }
-
-        .mainSection .mSubSec h3 {
+        .mainSection .mSubSec h2 {
             border-bottom: .1em solid #efefef;
-            border-image: linear-gradient(to left, #efefef, transparent);
+            letter-spacing: .3rem;
         }
-
+        .mainSection .mSubSec .mSubSecItem{
+            padding-left: .5em;
+        }
+        .mainSection .mSubSec .mSubSecItem h3{
+            text-transform: capitalize;
+        }
         /* END .mainSection */
+
+
+        @media (max-width: 600px) {
+            .container .rows section{
+                flex-basis: 80%;
+            }
+            #NameTitle_01{
+                display: none;
+            }
+            #NameTitle_02{
+                display: block;
+            }
+        }
     </style>
 </head>
 
@@ -179,15 +198,13 @@
 
                 <!-- * My Summary -->
                 <div class="pItem">
-                    <h3>summary</h3>
+                    <h2>summary</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsum voluptatibus dolores
-                        corrupti atque nesciunt animi neque quis voluptates numquam similique quaerat, fugit soluta
-                        adipisci dolorum odit incidunt tempora perferendis?
+                        Third year student at University-Missouri Sain Louis. I will complete and recieve a bachelor's in computer science fall of 2023. My goal is to complete school and gain more knowledge by working with your company. I will make sure to give the upmost services I can offer and continue learning new technologies so that I can server more services for your needs.
                     </p>
                 </div><!--= END Summary-->
                 <div class="pItem">
-                    <h3>contact</h3>
+                    <h2>contact</h2>
                     <address>
                         <p>Phone Address: <span>(314)-912-6131</span></p>
                         <p>
@@ -204,7 +221,7 @@
 
                 <!--= START Social Links -->
                 <div class="pItem">
-                    <h3>social</h3>
+                    <h2>social</h2>
                 </div><!--= END Social Links-->
             </section>
             <!-- !END LEFT SECTION -->
@@ -217,13 +234,12 @@
 
             <!--= START RIGHT SIDE -->
             <section class="col-3 columns mainSection">
-                <header>
+                <header id="NameTitle_01">
                     <hgroup>
                         <h1>Marco</h1>
                         <h1>Preciado</h1>
                         <h3>webdesigner/programmer</h3>
                     </hgroup>
-
                 </header>
 
 
@@ -231,7 +247,7 @@
 
                 <!--= START Education -->
                 <div class="mSubSec">
-                    <h3>Education</h3>
+                    <h2>Education</h2>
                     <!-- <div class="mSubSecItem">
                         <h4>
                             pattonville highschool
@@ -243,9 +259,9 @@
                         </ul>
                     </div> -->
                     <div class="mSubSecItem">
-                        <h4>
+                        <h3>
                             saint louis community college
-                        </h4>
+                        </h3>
                         <ul>
                             <li>
                                 2018 - 2021
@@ -262,9 +278,9 @@
                     </div>
 
                     <div class="mSubSecItem">
-                        <h4>
-                            University Saint Louis Missouri
-                        </h4>
+                        <h3>
+                            university saint louis missouri
+                        </h3>
                         <ul>
                             <li>2021 - Ongoing</li>
                             <li>GPA 3.56</li>
@@ -283,11 +299,11 @@
 
 
                 <div class="mSubSec">
-                    <h3>experience</h3>
+                    <h2>experience</h2>
                 </div>
 
                 <div class="mSubSec">
-                    <h3>activities and honors</h3>
+                    <h2>activities and honors</h2>
                 </div>
 
 
