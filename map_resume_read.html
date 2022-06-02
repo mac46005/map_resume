@@ -17,6 +17,9 @@
     <meta name="date" content="5/31/2022">
     <meta property="og:title" content="Marco Preciado Resume">
     <meta property="og:type" content="text document">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>MAP Resume</title>
     <style>
         :root {
@@ -34,6 +37,14 @@
         a {
             text-decoration: none;
             color: rgb(207, 37, 207);
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover, a:focus{
+            color: rgb(8, 237, 8);
         }
 
         ul {
@@ -137,6 +148,11 @@
         .personalSection h2 {
             color: rgb(0, 89, 255);
             font-size: 2rem;
+        }
+
+        #socialLinks a i {
+            font-size: 2rem;
+            padding: 1em;
         }
 
         /* END .personalSection */
@@ -262,18 +278,18 @@
                     <h2>contact</h2>
                     <address>
                         <p>
-                            Address: <br>
-                            11033 Ivan Ave. <br>
-                            St. Ann, Mo 63074
+                            <i class="fas fa-map-marked-alt"></i> <br>
+                            <a href="https://www.google.com/maps/place/11033+Ivan+Ave,+St+Ann,+MO+63074/@38.7282666,-90.4020253,17z/data=!3m1!4b1!4m5!3m4!1s0x87df33db0a06d215:0x5e83d03b63056665!8m2!3d38.7282624!4d-90.3998366" target="_blank">11033 Ivan Ave. <br>
+                            St. Ann, Mo 63074</a>
                         </p>
                         <p>
-                            Phone Address:
+                            <i class="fas fa-mobile"></i><br>
                             <span name="phonenumber">
                                 (314)-912-6131
                             </span>
                         </p>
                         <p>
-                            Email Address:
+                            <i class="fas fa-envelope"></i><br>
                             <a href="mailto:ideletefile@outlook.com">
                                 ideletefile@outlook.com
                             </a>
@@ -283,20 +299,18 @@
                 </div>
 
                 <!--= START Social Links -->
-                <div class="pItem">
+                <div class="pItem" id="socialLinks">
                     <h2>social</h2>
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/marco.preciado.735" target="_blank">faceBook</a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/ideletefile/">instagram</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/mac46005" target="_blank">github</a>
-                        </li>
+                    <a href="https://www.facebook.com/marco.preciado.735" target="_blank">
+                        <i class="fab fa-facebook" title="facebook"></i>
+                    </a>
 
-                    </ul>
+                    <a href="https://www.instagram.com/ideletefile/">
+                        <i class="fab fa-instagram" title="instagram"></i>
+                    </a>
+                    <a href="https://github.com/mac46005" target="_blank">
+                        <i class="fab fa-github" title="github"></i>
+                    </a>
                 </div>
                 <!--= END Social Links-->
             </section>
